@@ -57,6 +57,7 @@ const ProfileIcon = styled.div`
 `;
 
 const Navbar = () => {
+
   return (
     <NavbarContainer>
       <Logo>
@@ -64,7 +65,7 @@ const Navbar = () => {
       </Logo>
       <NavLinks>
         <NavLink><a href="/">Home</a></NavLink>
-        <NavLink><a href="/about">About Us</a></NavLink>
+        <NavLink><a href="/about-us">About Us</a></NavLink>
         <NavLink><a href="/vehicles">Vehicles</a></NavLink>
         <NavLink><a href="/contact">Contact Us</a></NavLink>
       </NavLinks>

@@ -7,6 +7,7 @@ import VehicleListingsPage from './pages/VehicleListingsPage';
 import ContactPage from './pages/ContactPage';
 import Footer from './components/Footer';
 import Navbar from './components/NavBar';
+import Aboutus from './pages/AboutUsPage';
 // Add other page imports here
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/register" element={<RegisterPage />} />
+                <Route path="/about-us" element={<Aboutus />} />
                 <Route path="/vehicles" element={<VehicleListingsPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 {/* Add other routes here */}
