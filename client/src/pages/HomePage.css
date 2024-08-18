@@ -1,0 +1,42 @@
+/* src/pages/HomePage.css */
+
+.hero-section {
+    background-image: url('https://www.freeiconspng.com/thumbs/vintage-cars-png/vintage-cars-png-1.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.hero-section .hero-buttons .btn-primary {
+    background-color: #FF5733;
+    border: none;
+}
+
+.hero-section .hero-buttons .btn-secondary {
+    background-color: #333;
+    border: none;
+}
+
+.hero-section .hero-search .form-control {
+    margin-bottom: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #FF5733;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #FF5733;
+}
+
+.btn-danger {
+    background-color: #FF5733;
+    border: none;
+}

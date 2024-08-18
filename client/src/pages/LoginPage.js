@@ -27,34 +27,40 @@ const LoginPage = () => {
     };
 
     return (
-        <Container>
-            <h2 className="my-4">Login</h2>
-            <Form onSubmit={handleSubmit}>
-                <Form.Group controlId="formEmail">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control
-                        type="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        onChange={handleChange}
-                    />
-                </Form.Group>
+        <Container
+    className="d-flex justify-content-center align-items-center"
+    style={{ borderRadius: '10px', padding: '20px', maxWidth: '400px', marginTop: '20px', backgroundColor: '#f8f9fa' }}
+>
+    <div>
+        <h2 className="my-4 text-center">Login</h2>
+        <Form onSubmit={handleSubmit}>
+            <Form.Group controlId="formEmail">
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    onChange={handleChange}
+                />
+            </Form.Group>
 
-                <Form.Group controlId="formPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control
-                        type="password"
-                        name="password"
-                        placeholder="Enter your password"
-                        onChange={handleChange}
-                    />
-                </Form.Group>
+            <Form.Group controlId="formPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control
+                    type="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    onChange={handleChange}
+                />
+            </Form.Group>
 
-                <Button variant="primary" type="submit" className="mt-3">
-                    Login
-                </Button>
-            </Form>
-        </Container>
+            <Button variant="primary" type="submit" className="mt-3 w-100">
+                Login
+            </Button>
+        </Form>
+    </div>
+</Container>
+
     );
 };
 
