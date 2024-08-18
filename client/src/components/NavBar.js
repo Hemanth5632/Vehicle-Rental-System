@@ -61,7 +61,7 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <Logo>
-        NOVA<LogoSpan>RIDE</LogoSpan>
+        RIDE<LogoSpan>QUEST</LogoSpan>
       </Logo>
       <NavLinks>
         <NavLink><a href="/">Home</a></NavLink>

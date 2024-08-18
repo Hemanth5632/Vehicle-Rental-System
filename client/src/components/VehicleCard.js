@@ -138,24 +138,3 @@ const VehicleCard = ({ vehicle }) => {
 };
 
 export default VehicleCard;
-
-// import React from 'react';
-// import { Card, Button } from 'react-bootstrap';
-
-// const VehicleCard = ({ vehicle }) => {
-//     return (
-//         <Card>
-//             <Card.Img variant="top" src={vehicle.imageUrl} alt={vehicle.name} />
-//             <Card.Body>
-//                 <Card.Title>{vehicle.name}</Card.Title>
-//                 <Card.Text>
-//                     <strong>Type:</strong> {vehicle.type}<br />
-//                     <strong>Price:</strong> ${vehicle.price}/day
-//                 </Card.Text>
-//                 <Button variant="primary">Book Now</Button>
-//             </Card.Body>
-//         </Card>
-//     );
-// };
-
-// export default VehicleCard;

@@ -14,7 +14,8 @@ const FooterContainer = styled.footer`
 `;
 
 const BrandSection = styled.div`
-  flex: 1;
+  flex: 2;
+  margin-left: 60px;
 `;
 
 const BrandLogo = styled.h1`
@@ -102,7 +103,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <BrandSection>
-        <BrandLogo>NOVA<span style={{color: '#fff'}}>RIDE</span></BrandLogo>
+        <BrandLogo>RIDE<span style={{color: '#fff'}}>QUEST</span></BrandLogo>
         <BrandDescription>
           Experience the ease and convenience of renting a car with Novaride.
         </BrandDescription>
@@ -141,7 +142,7 @@ const Footer = () => {
       </SocialIconsContainer>
 
       <CopyrightSection>
-        © 2024 Novaride. All rights reserved.
+        © 2024 RideQuest. All rights reserved.
       </CopyrightSection>
     </FooterContainer>
   );

@@ -1,50 +1,121 @@
-// src/pages/HomePage.js
-
 import React from 'react';
-import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './HomePage.css';  // Import the CSS file for custom styles
+import styled from 'styled-components';
 
+const HomePageContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://st2.depositphotos.com/1022214/5248/i/450/depositphotos_52489449-stock-photo-man-offering-a-car-key.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+`;
+
+const Overlay = styled.div`
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50;
+  left: 0;
+`;
+
+const ContentContainer = styled.div`
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+ /* Adjusted to move the container down */
+`;
+
+const Title = styled.h1`
+  font-size: 48px;
+  margin-bottom: 20px;
+`;
+
+const Subtitle = styled.p`
+  font-size: 18px;
+  margin-bottom: 40px;
+`;
+
+const ButtonGroup = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+`;
+
+const Button = styled.button`
+  background-color: ${(props) => (props.primary ? '#ff4a00' : '#fff')};
+  color: ${(props) => (props.primary ? '#fff' : '#ff4a00')};
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+`;
+
+const FormContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+`;
+
+const Input = styled.input`
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+`;
+
+const Select = styled.select`
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+`;
+
+const SearchButton = styled.button`
+  background-color: #ff4a00;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+`;
 
 const HomePage = () => {
-    return (
-        <div>
-
-            {/* Hero Section */}
-            <header className="hero-section text-white text-center">
-                <div className="container">
-                    <h1 className="display-4">Looking to save more on your rental car?</h1>
-                    <p className="lead">Whether you're planning a weekend getaway, a business trip, or just need a reliable ride for the day, we offer a wide range of vehicles to suit your needs.</p>
-                    <div className="hero-buttons">
-                        <Link to="/vehicles" className="btn btn-primary btn-lg mr-2">Book A Rental</Link>
-                        <Link to="/learnmore" className="btn btn-secondary btn-lg">Learn More</Link>
-                    </div>
-                    <div className="hero-search mt-4">
-                        <div className="row">
-                            <div className="col-md-2">
-                                <input type="text" className="form-control" placeholder="Car Type" />
-                            </div>
-                            <div className="col-md-2">
-                                <input type="text" className="form-control" placeholder="Pickup Location" />
-                            </div>
-                            <div className="col-md-2">
-                                <input type="date" className="form-control" placeholder="Pickup Date" />
-                            </div>
-                            <div className="col-md-2">
-                                <input type="text" className="form-control" placeholder="Dropoff Location" />
-                            </div>
-                            <div className="col-md-2">
-                                <input type="date" className="form-control" placeholder="Return Date" />
-                            </div>
-                            <div className="col-md-2">
-                                <button className="btn btn-danger btn-block">Search</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-    );
+  return (
+    <HomePageContainer>
+      <Overlay />
+      <ContentContainer>
+        <Title>Looking to save more on your rental car?</Title>
+        <Subtitle>
+          Whether you're planning a weekend getaway, a business trip, or just need a reliable ride for the day, we offer a wide range of vehicles to suit your needs.
+        </Subtitle>
+        <ButtonGroup>
+          <Button primary>Book A Rental</Button>
+          <Button>Learn More</Button>
+        </ButtonGroup>
+        <FormContainer>
+          <Select>
+            <option>Car Type</option>
+          </Select>
+          <Input type="text" placeholder="Pick Up Location" />
+          <Input type="date" placeholder="Pick Up Date" />
+          <Input type="text" placeholder="Drop Off Location" />
+          <Input type="date" placeholder="Return Date" />
+          <SearchButton>Search</SearchButton>
+        </FormContainer>
+      </ContentContainer>
+    </HomePageContainer>
+  );
 };
 
 export default HomePage;

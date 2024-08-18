@@ -129,7 +129,7 @@ const ContactPage = () => {
                   <InfoTitle>Contact Information</InfoTitle>
                   <InfoText>Say something to start a live chat!</InfoText>
                   <InfoText>📞 (+01) 789 854 856</InfoText>
-                  <InfoText>📧 info@domain.com</InfoText>
+                  <InfoText>📧 ridequest@domain.com</InfoText>
                   <InfoText>📍 1234 Elm Street, Suite 567, Springfield, United States</InfoText>
               </InfoContainer>
               <FormContainer>
